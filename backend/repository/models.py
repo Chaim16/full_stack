@@ -19,17 +19,3 @@ class BaseModel(Base):
     def as_dict(self):
         return {c.key: getattr(self, c.key) for c in inspect(self).mapper.column_attrs}
 
-
-class CombatTask(BaseModel):
-    """作战任务"""
-
-    __tablename__ = "combat_task"
-
-    name = Column(String(64), comment="名称")
-    description = Column(String(512), comment="描述")
-    status = Column(String(16), comment="状态")
-    init_situation = Column(JSON, comment="初始态势")
-    flow_json = Column(JSON, comment="攻击流程图")
-    limit_att_ck = Column(ARRAY(String), comment="限制技战术")
-    tendency = Column(String(64), comment="作战倾向")
-
