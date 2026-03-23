@@ -2,7 +2,7 @@ import time
 
 from sqlalchemy import Column, BIGINT, inspect, String, JSON, ARRAY
 
-from backend.utils.database import Base
+from utils.database import Base
 
 
 class BaseModel(Base):

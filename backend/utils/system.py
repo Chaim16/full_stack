@@ -1,8 +1,8 @@
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
 
-from backend.api import index
-from backend.middleware.http_log_middleware import HTTPLogMiddleware
+from api import index
+from middleware.http_log_middleware import HTTPLogMiddleware
 
 
 def load_router(app):

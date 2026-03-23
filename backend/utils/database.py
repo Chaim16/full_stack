@@ -4,7 +4,7 @@ from urllib.parse import quote_plus
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from backend.utils.other import read_yaml_config
+from utils.other import read_yaml_config
 
 config = read_yaml_config()
 

@@ -2,7 +2,7 @@ import time
 
 from fastapi import APIRouter
 
-from backend.utils.response import set_result
+from utils.response import set_result
 
 router = APIRouter()
 

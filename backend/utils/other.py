@@ -3,7 +3,7 @@ import re
 
 import yaml
 
-from backend.utils.constains import PROJECT_HOME
+from utils.constains import PROJECT_HOME
 
 
 def read_yaml_config(file_path=os.path.join(PROJECT_HOME, "conf", "application.yaml")):

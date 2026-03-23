@@ -4,7 +4,7 @@ import uuid
 from fastapi import Request
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from backend.utils.logger import get_logger
+from utils.logger import get_logger
 
 logger = get_logger("access")
 
